@@ -1,0 +1,84 @@
+@media (max-width: 320px){
+    /***********LOGO MENÚ***********/
+    header{
+        nav{
+            div{
+                img{
+                    width: 12%;
+                }
+            }
+        }
+    }
+    /********SECCIÓN PRINCIPAL******/
+    .sectionPrincipal{
+        div{
+            h1{
+                font-size: 2rem;
+            }
+            h2{
+                font-size: 1rem;
+            }
+        }
+    }
+    /********SECCIÓN SOBRE MÍ*******/
+    .sectionSegunda{
+        height: 42.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div{
+            img{
+                width: 14.0625rem;
+            }
+        }
+        div{
+            width: 100%;
+            padding: 0rem;
+            margin: 1.25rem;
+            p{
+                font-size: .9375rem;
+            }
+        }
+    }
+    /********SECCIÓN SERVICIOS******/
+    .sectionServicios{
+        margin-top: 4.375rem;
+        margin-bottom: 3.125rem;
+    }
+
+    .servicios{
+        img{
+            width: 12.5rem;
+        }
+        h3{
+            font-size: 1rem;
+        }
+    }
+    /********SECCIÓN CONTACTO*******/
+    .sectionCuatro{
+        div{
+            h3{
+                font-size: 1.875rem;
+            }
+        }
+        div{
+            img{
+                width: 17.5rem;
+            }
+        }
+    }
+
+    .formulario{
+        margin-right: 0rem;
+        label{
+            font-size: 1rem;
+        }
+        input, textarea{
+            font-size: .875rem;
+            width: 17.5rem;
+            &:last-child{
+                font-size: 1rem;
+            }
+        }
+    }
+}

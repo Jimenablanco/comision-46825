@@ -1,0 +1,177 @@
+@media (max-width: 622px){
+    /***********LOGO MENÚ**********/
+    nav{
+        div{
+            img{
+                width: 11%;
+            }
+        }
+    }
+    /********SECCIÓN PRINCIPAL******/
+    .sectionPrincipal{
+        div{
+            h1{
+                font-size: 2.1875rem;
+            }
+            h2{
+                font-size: 1.125rem;
+            }
+        }
+    }
+    /********SECCIÓN SOBRE MÍ*******/
+    .sectionSegunda{
+        height: 43.75rem;
+        div{
+            img{
+                width: 17.5rem;
+            }
+        }
+        div{
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+    /*******SECCIÓN SERVICIOS******/
+    .servicios{ 
+        img{
+            width: 15.625rem;
+        }
+    }
+    /********SECCIÓN CONTACTO*******/
+    .sectionCuatro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div{
+            h3{
+                writing-mode: horizontal-tb;
+                font-size: 3.125rem;
+                letter-spacing: .625rem;
+            }
+        }
+        div{
+            img{
+                width: 21.875rem;
+            }
+        }
+    }
+
+    .formulario{
+        label{
+            font-size: 1.25rem;
+        }
+        input, textarea{
+            font-size: 1.125rem;
+            width: 20.8125rem;
+            &:last-child{
+                font-size: 1.25rem;
+            }
+        }
+    }
+    /**********PÁGINA SOBRE MÍ*********/
+    .sector-1{
+        h2{
+            font-size: 1.875rem;
+        }
+    }
+
+    .sector-4{
+        grid-column: 1 / 4;
+        margin-top: 1.25rem;
+    }
+
+    .sector-5{
+        grid-column: 1 / 4;
+        grid-row: 4;
+        top: 0rem;
+    }
+
+    .sector-6{
+        grid-row: 5;
+    }
+
+    .p-SobreMi{
+        font-size: 1rem;
+    }
+    /*********PÁGINA ASESORAMIENTO INTEGRAL********/
+    .sectionPageAsesoramiento{
+        p{
+            font-size: 1rem;
+        }
+        div{
+            h2{
+                font-size: 1.5625rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+            .imagenesPages{
+                width: 11.25rem;
+            }
+            .finalPages{
+                font-size: 1rem;
+            }
+        }
+
+    }
+    /*********PÁGINA ORDEN DE GUARDARROPAS********/
+    .sectionPageGuardarropas{
+        p{
+            font-size: 1rem;
+        }
+        h2{
+            font-size: 1.5625rem;
+        }
+        .pInfoPages{
+            font-size: 1rem;
+        }
+        div{
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+    /*********PÁGINA PERSONAL SHOPPER********/
+    .sectionPageShopper{
+        p{
+            font-size: 1rem;
+        }
+        div{
+            h2{
+                font-size: 1.5625rem;
+            }
+            .contenedorShopper{
+                img{
+                    width: 18.75rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
+                .finalShopper{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    /*********PÁGINA ARMADO DE VALIJA********/
+    .sectionPageValija{
+        p{
+            font-size: 1rem;
+        }
+        h2{
+            font-size: 1.5625rem;
+        }
+        div{
+            p{
+                font-size: 1rem;
+            }
+            img{
+                width: 18.75rem;
+            }
+            .finalPages{
+                font-size: 1rem;
+            }
+        }
+    }
+}

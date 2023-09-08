@@ -1,0 +1,31 @@
+.sectionPrincipal{
+    background-image: url("../assets/imagenes/imgPortada.png");
+    width: 100%;
+    height: 37.5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div{
+        padding: 1.5625rem 1.875rem 1.5625rem 1.875rem;
+        background-color: rgba(13, 13, 13, 0.46);
+        border-radius: 3.125rem;
+        h1{
+            font-family: $fuente-titulo-principal;
+            color: white;
+            text-align: center;
+            font-size: 6.25rem;
+            font-weight: 400;
+            text-shadow: 0rem .125rem .25rem rgba(0, 0, 0, 0.35);
+        }
+        h2{
+            font-family: $fuente-titulos-secundarios;
+            color: #CCA374;
+            text-align: center;
+            font-size: 1.5625rem;
+            font-weight: 400;
+        }
+    }
+}

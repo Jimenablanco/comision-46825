@@ -1,0 +1,25 @@
+.containerFooter{
+    background-color: $background-principal;
+    footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: .625rem 1.875rem .625rem 1.875rem;
+        text-align: center;
+        p{
+            font-family: $fuente-titulos-secundarios;
+            color: #80786f;
+            font-size: 1.25rem;
+            margin-top: 1.25rem;
+        }
+        div{
+            list-style: none;
+            list-style-type: none;
+            img{
+                width: 3.125rem;
+            }
+        }
+    }
+}

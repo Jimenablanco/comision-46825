@@ -1,192 +1,420 @@
-@import url('https://fonts.googleapis.com/css2?family=Englebert&family=Inter:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap');
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Englebert&family=Inter:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-/* Colores:
-#806649
-#CCA374
-#80786F
-#FFFFFF
-#FFF0DE
-#FFCB91
+header nav div img {
+  width: 5%; }
 
-Tipografias:
-font-family: 'Englebert', sans-serif;
-font-family: 'Inter', sans-serif;
-font-family: 'Oswald', sans-serif;
-*/
+header nav div button {
+  color: #CCA374;
+  border: none; }
 
-/********************************HEADER******************************/
+header nav div div {
+  justify-content: flex-end; }
 
-.menuBarra{
-    justify-content: flex-end;
-}
+.tipografiaMenu {
+  font-family: 'Oswald', sans-serif;
+  color: #CCA374; }
 
-.tipografiaMenu{
-    font-family: 'Oswald', sans-serif;
-    color: #CCA374;
-}
-
-.menuHamburguesa{
-    color: #CCA374;
-    border:none;
-}
-
-.barraNav img{
-    width: 5%;
-}
-
-/*******************************MAIN*********************************/
-
-/****************SECCIÓN PRINCIPAL*************/
-
-.sectionPrincipal{
-    background-image: url("../assets/imagenes/imgPortada.png");
-    width: 100%;
-    height: 37.5rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.fondoTitulos{
+.sectionPrincipal {
+  background-image: url("../assets/imagenes/imgPortada.png");
+  width: 100%;
+  height: 37.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .sectionPrincipal div {
     padding: 1.5625rem 1.875rem 1.5625rem 1.875rem;
     background-color: rgba(13, 13, 13, 0.46);
-    border-radius: 3.125rem;
-}
-
-.fondoTitulos h1 {
-    font-family: 'Englebert', sans-serif;
-    color: #ffffff;
-    text-align: center;
-    font-size: 6.25rem;
-    font-weight: 400;
-    text-shadow: 0rem .125rem .25rem rgba(0, 0, 0, 0.35);
-}
-
-.fondoTitulos h2 {
-    font-family: 'Inter', sans-serif;
-    color: #CCA374;
-    text-align: center;
-    font-size: 1.5625rem;
-    font-weight: 400;
-}
+    border-radius: 3.125rem; }
+    .sectionPrincipal div h1 {
+      font-family: "Englebert", sans-serif;
+      color: white;
+      text-align: center;
+      font-size: 6.25rem;
+      font-weight: 400;
+      text-shadow: 0rem 0.125rem 0.25rem rgba(0, 0, 0, 0.35); }
+    .sectionPrincipal div h2 {
+      font-family: "Inter", sans-serif;
+      color: #CCA374;
+      text-align: center;
+      font-size: 1.5625rem;
+      font-weight: 400; }
 
 /*************SECCIÓN SOBRE MI**************/
-
 .sectionSegunda {
-    height: 32.8125rem;
-    margin: 1.25rem;
-    display: flex;
-    flex-direction: row;
-}
-
-.sectionSegunda img {
+  height: 32.8125rem;
+  margin: 1.25rem 1.25rem 3.125rem 1.25rem;
+  display: flex;
+  flex-direction: row; }
+  .sectionSegunda div img {
     width: 21.875rem;
-    box-shadow: 1.875rem 1.875rem #CCA374;
-}
-
-.sectionSegundaText {
+    box-shadow: 1.875rem 1.875rem #CCA374; }
+  .sectionSegunda div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: .9375rem;
-    padding: 1.25rem;
-}
-
-.sectionSegundaText p {
-    margin: .625rem;
-    font-family: 'Oswald', sans-serif;
-    color: #806649;
-    font-size: 1.25rem;
-    font-weight: 400;
-    padding: 1.875rem;
-    text-align: center;
-}
-
-
+    padding: 1.25rem; }
+    .sectionSegunda div p {
+      margin: .625rem;
+      font-family: 'Oswald', sans-serif;
+      color: #806649;
+      font-size: 1.25rem;
+      font-weight: 400;
+      padding: 1.875rem;
+      text-align: center; }
 
 /****************SECCIÓN SERVICIOS*************/
+.sectionServicios {
+  background-image: url(../assets/imagenes/fondoSection.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-position: center; }
 
-.sectionServicios{
-    background-image: url(../assets/imagenes/fondoSection.jpg);
-    background-repeat: no-repeat;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-}
+.servicios img {
+  border-radius: 10%;
+  width: 18.75rem; }
 
-.servicios img{
-    border-radius: 10%;
-    width: 18.75rem;
-}
+.servicios h3 {
+  color: #FFF0DE;
+  text-shadow: #806649 .0625rem 0 .625rem; }
 
-.servicios h3{
-    color:#FFF0DE;
-    text-shadow: #806649 .0625rem 0 .625rem;
-}
-
-
-/****************SECCIÓN CONTACTO*************/
-
-.sectionCuatro{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.sectionCuatroTitulo{
+/*****************SECCIÓN CONTACTO*************/
+.sectionCuatro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .sectionCuatro div h3 {
     writing-mode: vertical-rl;
     text-orientation: upright;
     color: #80786f;
-    font-family: 'Inter', sans-serif;
-    font-size: 2.5rem;
-}
+    font-family: "Inter", sans-serif;
+    font-size: 2.5rem; }
 
-.formulario{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    margin: 1.875rem;
-}
-
-.formulario label{
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin: 1.875rem; }
+  .formulario label {
     font-family: 'Oswald', sans-serif;
     color: #CCA374;
     margin-top: 1.25rem;
-    font-size: 1.25rem;
-}
-
-.formulario input, textarea{
+    font-size: 1.25rem; }
+  .formulario input, .formulario textarea {
     appearance: none;
     font-family: 'Oswald', sans-serif;
     font-size: 1.125rem;
     color: #80786f;
     text-align: start;
     border: .125rem solid #FFF0DE;
-    width: 20.8125rem;
-}
+    width: 20.8125rem; }
+    .formulario input:last-child, .formulario textarea:last-child {
+      text-align: center;
+      color: #FFF0DE;
+      font-size: 1.25rem;
+      border-radius: .625rem; }
 
-.formulario input:last-child{
-    text-align: center;
-    color: #FFF0DE;
+.pagina-sobreMi {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1.875rem;
+  margin: 1.875rem .9375rem 1.25rem .9375rem; }
+
+.sector-1 {
+  grid-column: 1 / 3;
+  grid-row: 1; }
+  .sector-1 h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 2.5rem;
+    color: #806649;
+    text-shadow: #cca374 .0625rem 0 .625rem;
+    margin-top: 1.875rem;
+    margin-left: 1.875rem; }
+
+.sector-2 {
+  grid-column: 1 /3;
+  grid-row: 2 / 3; }
+
+.sector-3 {
+  grid-column: 3;
+  grid-row: 1 / 4;
+  justify-self: center; }
+  .sector-3 img {
+    width: 23.125rem; }
+
+.sector-4 {
+  grid-column: 1 / 3;
+  grid-row: 3 / 6;
+  justify-self: center; }
+  .sector-4 img {
+    width: 18.125rem; }
+
+.sector-5 {
+  grid-column: 3;
+  grid-row: 4;
+  text-align: center; }
+
+.sector-6 {
+  grid-column: 1 / 4;
+  grid-row: 5;
+  text-align: center;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  background-color: #FFF0DE; }
+
+.p-SobreMi {
+  font-family: "Oswald", sans-serif;
+  color: #80786f;
+  font-size: 1.25rem;
+  margin-bottom: 0rem; }
+
+.sectionPageAsesoramiento {
+  margin-top: 1.875rem;
+  margin-bottom: 1.875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .sectionPageAsesoramiento p {
+    font-family: "Oswald", sans-serif;
+    color: #80786f;
     font-size: 1.25rem;
-    border-radius: .625rem;
-}
+    margin-left: 1.875rem;
+    margin-right: 1.875rem;
+    text-align: center; }
+  .sectionPageAsesoramiento div {
+    background-color: #FFF0DE;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: auto;
+    gap: .625rem;
+    align-items: center;
+    margin: 1.25rem; }
+    .sectionPageAsesoramiento div h2 {
+      font-family: "Inter", sans-serif;
+      font-size: 2.5rem;
+      color: #806649;
+      text-shadow: #cca374 .0625rem 0 .625rem;
+      margin-top: 1.875rem;
+      margin-left: 1.875rem;
+      grid-column: 1/6;
+      grid-row: 1; }
+    .sectionPageAsesoramiento div p {
+      color: #806649;
+      font-size: 1.25rem;
+      margin: 1.25rem 1.875rem 0rem 1.875rem;
+      grid-column: 1/4;
+      grid-row: 2; }
+    .sectionPageAsesoramiento div .finalPages {
+      font-family: "Oswald", sans-serif;
+      color: white;
+      font-size: 1.25rem;
+      background-color: #80786f;
+      text-align: center;
+      margin-top: .625rem;
+      margin-left: 1.25rem;
+      grid-column: 0.25;
+      grid-row: 3; }
 
-/****************BOTONES*************/
+.imagenesPages {
+  width: 14.375rem; }
+
+.img-1 {
+  grid-column: 4/6;
+  grid-row: 2; }
+
+.img-2 {
+  grid-column: 6/8;
+  grid-row: 2; }
+
+.img-3 {
+  grid-column: 5/7;
+  grid-row: 3;
+  margin-bottom: 1.875rem; }
+
+.sectionPageGuardarropas {
+  margin-top: 1.875rem;
+  margin-bottom: 1.875rem; }
+  .sectionPageGuardarropas p {
+    font-family: "Oswald", sans-serif;
+    color: #80786f;
+    font-size: 1.25rem;
+    margin-left: 1.875rem;
+    margin-right: 1.875rem;
+    text-align: center; }
+  .sectionPageGuardarropas h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 2.5rem;
+    color: #806649;
+    text-shadow: #cca374 .0625rem 0 .625rem;
+    margin-top: 1.875rem;
+    margin-left: 1.875rem; }
+  .sectionPageGuardarropas .pInfoPages {
+    color: #806649;
+    font-size: 1.25rem;
+    margin: 1.25rem 1.875rem 0rem 1.875rem;
+    margin-bottom: 1.875rem; }
+  .sectionPageGuardarropas div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    .sectionPageGuardarropas div p {
+      font-family: "Oswald", sans-serif;
+      color: white;
+      font-size: 1.25rem;
+      background-color: #80786f;
+      text-align: center;
+      margin-top: .625rem;
+      margin-left: 1.25rem;
+      grid-column: none;
+      grid-row: none; }
+
+.img-4 {
+  margin-right: .625rem; }
+
+.img-5 {
+  margin-left: .625rem; }
+
+.sectionPageShopper {
+  margin-top: 1.875rem;
+  margin-bottom: 1.875rem; }
+  .sectionPageShopper p {
+    font-family: "Oswald", sans-serif;
+    color: #80786f;
+    font-size: 1.25rem;
+    margin-left: 1.875rem;
+    margin-right: 1.875rem;
+    text-align: center; }
+  .sectionPageShopper div {
+    background-color: #FFF0DE; }
+    .sectionPageShopper div h2 {
+      font-family: "Inter", sans-serif;
+      font-size: 2.5rem;
+      color: #806649;
+      text-shadow: #cca374 .0625rem 0 .625rem;
+      margin-top: 1.875rem;
+      margin-left: 1.875rem; }
+
+.contenedorShopper {
+  display: grid;
+  grid-template-columns: 2;
+  grid-auto-rows: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 1.875rem;
+  margin-right: 1.875rem; }
+  .contenedorShopper img {
+    grid-column: 1;
+    grid-row: 1/4;
+    margin-bottom: 1.25rem; }
+  .contenedorShopper p {
+    color: #806649;
+    font-size: 1.25rem;
+    margin: 1.25rem 1.875rem 0rem 1.875rem;
+    grid-column: 2;
+    grid-row: 1/3; }
+  .contenedorShopper .finalShopper {
+    font-family: "Oswald", sans-serif;
+    color: white;
+    font-size: 1.25rem;
+    background-color: #80786f;
+    text-align: center;
+    margin-top: .625rem;
+    margin-left: 1.25rem;
+    grid-column: 2;
+    grid-row: 3; }
+
+.sectionPageValija {
+  margin-top: 1.875rem;
+  margin-bottom: 1.875rem; }
+  .sectionPageValija p {
+    font-family: "Oswald", sans-serif;
+    color: #80786f;
+    font-size: 1.25rem;
+    margin-left: 1.875rem;
+    margin-right: 1.875rem;
+    text-align: center; }
+  .sectionPageValija h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 2.5rem;
+    color: #806649;
+    text-shadow: #cca374 .0625rem 0 .625rem;
+    margin-top: 1.875rem;
+    margin-left: 1.875rem; }
+  .sectionPageValija div {
+    display: grid;
+    grid-template-columns: 2;
+    grid-auto-rows: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 1.875rem;
+    margin-right: 1.875rem; }
+    .sectionPageValija div p {
+      color: #806649;
+      font-size: 1.25rem;
+      margin: 1.25rem 1.875rem 0rem 1.875rem;
+      grid-column: 1;
+      grid-row: 1/3; }
+    .sectionPageValija div img {
+      grid-column: 2;
+      grid-row: 1/4;
+      margin-bottom: 1.25rem; }
+    .sectionPageValija div .finalPages {
+      font-family: "Oswald", sans-serif;
+      color: white;
+      font-size: 1.25rem;
+      background-color: #80786f;
+      text-align: center;
+      margin-top: .625rem;
+      margin-left: 1.25rem;
+      grid-column: 1;
+      grid-row: 3;
+      margin-bottom: 1.25rem; }
+
+.containerFooter {
+  background-color: #FFF0DE; }
+  .containerFooter footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: .625rem 1.875rem .625rem 1.875rem;
+    text-align: center; }
+    .containerFooter footer p {
+      font-family: "Inter", sans-serif;
+      color: #80786f;
+      font-size: 1.25rem;
+      margin-top: 1.25rem; }
+    .containerFooter footer div {
+      list-style: none;
+      list-style-type: none; }
+      .containerFooter footer div img {
+        width: 3.125rem; }
 
 .buttons {
-    background-color: #806649;
-    border: none;
-    margin: .3125rem;
-}
-
-.buttons a {
+  background-color: #806649;
+  border: none;
+  margin: .3125rem; }
+  .buttons:hover {
+    background-color: #CCA374; }
+  .buttons a {
     text-decoration: none;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -197,839 +425,520 @@ font-family: 'Oswald', sans-serif;
     opacity: 0.6;
     transition: 0.3s;
     display: inline-block;
-    cursor: pointer;
-}
+    cursor: pointer; }
+  .buttons:hover a {
+    opacity: 1; }
 
-.buttons:hover {
-    background-color: #CCA374;
-}
+@media (max-width: 1049px) {
+  /*********PÁGINA SOBRE MÍ********/
+  .sector-3 img {
+    width: 21.25rem; }
+  .sector-4 img {
+    width: 15.625rem; } }
 
-.buttons:hover a {
-    opacity: 1;
-}
+@media (max-width: 992px) {
+  /********SECCIÓN PRINCIPAL*******/
+  .sectionPrincipal div h1 {
+    font-size: 4.0625rem; }
+  /********PÁGINA SOBRE MÍ********/
+  .sector-1 h2 {
+    font-size: 2.1875rem; }
+  .sector-3 img {
+    width: 23.75rem; }
+  .sector-4 img {
+    width: 14.375rem; }
+  .p-SobreMi {
+    font-size: 1.125rem; }
+  /*********PÁGINA ASESORAMIENTO INTEGRAL********/
+  .sectionPageAsesoramiento p {
+    font-size: 1.125rem; }
+  .sectionPageAsesoramiento div h2 {
+    font-size: 2.1875rem; }
+  .sectionPageAsesoramiento div p {
+    font-size: 1.125rem; }
+  .sectionPageAsesoramiento div .imagenesPages {
+    width: 12.5rem; }
+  /*********PÁGINA ORDEN DE GUARDARROPAS********/
+  .sectionPageGuardarropas p {
+    font-size: 1.125rem; }
+  .sectionPageGuardarropas h2 {
+    font-size: 2.1875rem; }
+  .sectionPageGuardarropas .pInfoPages {
+    font-size: 1.125rem; }
+  .sectionPageGuardarropas div p {
+    font-size: 1.125rem; }
+  /*********PÁGINA PERSONAL SHOPPER********/
+  .sectionPageShopper p {
+    font-size: 1.125rem; }
+  .sectionPageShopper div h2 {
+    font-size: 2.1875rem; }
+  .sectionPageShopper div .contenedorShopper p {
+    font-size: 1.125rem; }
+  /*********PÁGINA ARMADO DE VALIJA********/
+  .sectionPageValija p {
+    font-size: 1.125rem; }
+  .sectionPageValija h2 {
+    font-size: 2.1875rem; }
+  .sectionPageValija div p {
+    font-size: 1.125rem; }
+  /**********FOOTER*************/
+  .containerFooter footer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center; }
+    .containerFooter footer p {
+      text-align: center;
+      font-size: 1.125rem; }
+    .containerFooter footer div {
+      margin-top: .625rem; }
+      .containerFooter footer div img {
+        width: 2.5rem; } }
 
-/********************************PÁGINA SOBRE MÍ*****************************/
-.pagina-sobreMi{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(6.25rem, auto);
-    grid-gap: 1.875rem;
-    margin: 1.875rem .9375rem 1.25rem .9375rem;
-}
-.sector-1{
-    grid-column: 1 / 3;
-    grid-row: 1;
-}
-.sector-1 h3{
-    font-family: 'Inter', sans-serif;
-    font-size: 2.5rem;
-    color: #806649;
-    text-shadow: #CCA374 .0625rem 0 .625rem;
-}
-
-.sector-2{
-    grid-column: 1 /3;
-    grid-row: 2 / 3;
-}
-
-.sector-3{
-    grid-column: 3;
-    grid-row: 1 / 4;
-    justify-self: center;
-}
-.sector-3 img{
-    width: 23.125rem;
-}
-
-.sector-4{
-    grid-column: 1 / 3;
-    grid-row: 3 / 6;
-    justify-self: center;
-}
-
-.sector-5{
-    grid-column: 3;
+/***********************media 928**********************/
+@media (max-width: 928px) {
+  /***********LOGO MENÚ**********/
+  header nav div img {
+    width: 7%; }
+  /***********SECCIÓN PRINCIPAL*******/
+  .sectionPrincipal {
+    height: 21.875rem; }
+    .sectionPrincipal div h1 {
+      font-size: 3.75rem; }
+    .sectionPrincipal div h2 {
+      font-size: 1.25rem; }
+  /***********SECCIÓN SERVICIOS*******/
+  .servicios img {
+    width: 15.625rem; }
+    .servicios img h3 {
+      font-size: 1.25rem; }
+  /***********SECCIÓN CONTACTO********/
+  .sectionCuatro div h3 {
+    font-size: 2.1875rem;
+    margin-left: .3125rem; }
+  .sectionCuatro div img {
+    width: 21.875rem; }
+  .formulario {
+    margin-right: .3125rem; }
+    .formulario label {
+      font-size: 1.125rem; }
+    .formulario input, .formulario textarea {
+      font-size: .9375rem;
+      width: 18.125rem; }
+      .formulario input:last-child, .formulario textarea:last-child {
+        font-size: 1.125rem; }
+  /***********PÁGINA SOBRE MÍ**********/
+  .sector-3 img {
+    width: 19.0625rem; }
+  .sector-4 img {
+    width: 11.25rem; }
+  /*********PÁGINA ASESORAMIENTO INTEGRAL********/
+  .sectionPageAsesoramiento div p {
+    grid-column: 1/8;
+    grid-row: 3; }
+  .sectionPageAsesoramiento div .finalPages {
+    grid-column: 1/5;
+    grid-row: 4; }
+  .img-1 {
+    grid-column: 2/4;
+    grid-row: 2; }
+  .img-2 {
+    grid-column: 5/7;
+    grid-row: 2; }
+  .img-3 {
     grid-row: 4;
-    text-align: center;
-}
+    margin-top: 1.25rem; }
+  /*********PÁGINA PERSONAL SHOPPER********/
+  .contenedorShopper .finalShopper {
+    margin-bottom: 1.875rem; }
+  /*********PÁGINA ARMADO DE VALIJA********/
+  .sectionPageValija div .finalPages {
+    grid-column: 1/3; } }
 
-.sector-6{
+@media (max-width: 768px) {
+  /***********LOGO MENÚ**********/
+  header nav div img {
+    width: 9%; }
+  /*********SECCIÓN PRINCIPAL********/
+  .sectionPrincipal {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 18.75rem; }
+    .sectionPrincipal div h1 {
+      font-size: 3.125rem;
+      font-weight: 300; }
+    .sectionPrincipal div h2 {
+      font-size: 1.25rem;
+      font-weight: 300; }
+  /********SECCIÓN SOBRE MÍ*******/
+  .sectionSegunda {
+    height: 43.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .sectionSegunda div img {
+      width: 18.75rem; }
+    .sectionSegunda div {
+      width: 100%;
+      padding: 0rem;
+      margin: 1.25rem; }
+      .sectionSegunda div p {
+        font-size: 1.125rem; }
+  /*********SECCIÓN SERVICIOS********/
+  .servicios img {
+    width: 12.5rem; }
+  .servicios h3 {
+    font-size: 1.125rem; }
+  /*********SECCIÓN CONTACTO*********/
+  .sectionCuatro div h3 {
+    font-size: 1.5625rem; }
+  .sectionCuatro div img {
+    width: 18.75rem; }
+  .formulario label {
+    font-size: .93755rem; }
+  .formulario input, .formulario textarea {
+    font-size: .8125rem;
+    width: 13.125rem; }
+    .formulario input:last-child, .formulario textarea:last-child {
+      font-size: .9375rem; }
+  /**************BOTONES*************/
+  .buttons a {
+    font-size: .875rem; }
+  /**********PÁGINA SOBRE MÍ*********/
+  .sector-3 {
+    grid-column: 3;
+    grid-row: 1 / 4; }
+  .sector-4 {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    text-align: center; }
+    .sector-4 img {
+      margin: .9375rem; }
+  .sector-5 {
+    grid-column: 3;
+    grid-row: 3;
+    position: relative;
+    top: 18.75rem; }
+  .sector-6 {
     grid-column: 1 / 4;
-    grid-row: 5;
-    text-align: center;
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
-    background-color: #FFF0DE;
-}
+    grid-row: 4; }
+  .p-SobreMi {
+    font-size: 1rem; }
+  /*********PÁGINA PERSONAL SHOPPER********/
+  .contenedorShopper {
+    display: flex;
+    flex-direction: column; }
+  /*********PÁGINA ARMADO DE VALIJA********/
+  .sectionPageValija div {
+    display: flex;
+    flex-direction: column; }
+    .sectionPageValija div p {
+      margin-bottom: 1.25rem; }
+  /************FOOTER************/
+  .containerFooter footer p {
+    font-size: 1rem; }
+  .containerFooter footer div {
+    margin-top: .9375rem; }
+    .containerFooter footer div img {
+      width: 2.1875rem; } }
 
-.p-SobreMi{
-    font-family: 'Oswald', sans-serif;
-    color: #80786f;
-    font-size: 1.25rem;
-    margin-bottom: 0rem;
-}
+@media (max-width: 622px) {
+  /***********LOGO MENÚ**********/
+  nav div img {
+    width: 11%; }
+  /********SECCIÓN PRINCIPAL******/
+  .sectionPrincipal div h1 {
+    font-size: 2.1875rem; }
+  .sectionPrincipal div h2 {
+    font-size: 1.125rem; }
+  /********SECCIÓN SOBRE MÍ*******/
+  .sectionSegunda {
+    height: 43.75rem; }
+    .sectionSegunda div img {
+      width: 17.5rem; }
+    .sectionSegunda div p {
+      font-size: 1rem; }
+  /*******SECCIÓN SERVICIOS******/
+  .servicios img {
+    width: 15.625rem; }
+  /********SECCIÓN CONTACTO*******/
+  .sectionCuatro {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .sectionCuatro div h3 {
+      writing-mode: horizontal-tb;
+      font-size: 3.125rem;
+      letter-spacing: .625rem; }
+    .sectionCuatro div img {
+      width: 21.875rem; }
+  .formulario label {
+    font-size: 1.25rem; }
+  .formulario input, .formulario textarea {
+    font-size: 1.125rem;
+    width: 20.8125rem; }
+    .formulario input:last-child, .formulario textarea:last-child {
+      font-size: 1.25rem; }
+  /**********PÁGINA SOBRE MÍ*********/
+  .sector-1 h2 {
+    font-size: 1.875rem; }
+  .sector-4 {
+    grid-column: 1 / 4;
+    margin-top: 1.25rem; }
+  .sector-5 {
+    grid-column: 1 / 4;
+    grid-row: 4;
+    top: 0rem; }
+  .sector-6 {
+    grid-row: 5; }
+  .p-SobreMi {
+    font-size: 1rem; }
+  /*********PÁGINA ASESORAMIENTO INTEGRAL********/
+  .sectionPageAsesoramiento p {
+    font-size: 1rem; }
+  .sectionPageAsesoramiento div h2 {
+    font-size: 1.5625rem; }
+  .sectionPageAsesoramiento div p {
+    font-size: 1rem; }
+  .sectionPageAsesoramiento div .imagenesPages {
+    width: 11.25rem; }
+  .sectionPageAsesoramiento div .finalPages {
+    font-size: 1rem; }
+  /*********PÁGINA ORDEN DE GUARDARROPAS********/
+  .sectionPageGuardarropas p {
+    font-size: 1rem; }
+  .sectionPageGuardarropas h2 {
+    font-size: 1.5625rem; }
+  .sectionPageGuardarropas .pInfoPages {
+    font-size: 1rem; }
+  .sectionPageGuardarropas div p {
+    font-size: 1rem; }
+  /*********PÁGINA PERSONAL SHOPPER********/
+  .sectionPageShopper p {
+    font-size: 1rem; }
+  .sectionPageShopper div h2 {
+    font-size: 1.5625rem; }
+  .sectionPageShopper div .contenedorShopper img {
+    width: 18.75rem; }
+  .sectionPageShopper div .contenedorShopper p {
+    font-size: 1rem; }
+  .sectionPageShopper div .contenedorShopper .finalShopper {
+    font-size: 1rem; }
+  /*********PÁGINA ARMADO DE VALIJA********/
+  .sectionPageValija p {
+    font-size: 1rem; }
+  .sectionPageValija h2 {
+    font-size: 1.5625rem; }
+  .sectionPageValija div p {
+    font-size: 1rem; }
+  .sectionPageValija div img {
+    width: 18.75rem; }
+  .sectionPageValija div .finalPages {
+    font-size: 1rem; } }
 
-/********************************PÁGINA SERVICIOS*****************************/
-
-.sectionPageServicios{
+@media (max-width: 585px) {
+  /*********PÁGINA SOBRE MÍ********/
+  .pagina-sobreMi {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 1.875rem;
-    margin-bottom: 1.875rem;
-}
-
-.sectionPageServicios p{
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.25rem;
-}
-
-.avisoPages{
-    color: #80786f;
-    margin-left: 1.875rem;
-    margin-right: 1.875rem;
-    text-align: center;
-}
-
-.contenedorServicios{
-    background-color: #FFF0DE;
+    flex-wrap: wrap; }
+  .sector-1 h2 {
+    text-align: center; }
+  .sector-2 p {
+    text-align: center; }
+  .sector-3 img {
+    width: 15.625rem; }
+  .sector-4 {
+    margin: 0rem; }
+    .sector-4 img {
+      margin: .3125rem;
+      width: 11.25; }
+  /*********PÁGINA ASESORAMIENTO INTEGRAL********/
+  .sectionPageAsesoramiento div {
     display: grid;
-    grid-template-columns: repeat(4, 2fr);
-    grid-auto-rows: auto;
-    gap: .625rem;
-    align-items: center;
-    margin: 1.25rem;
-}
-
-.tituloPage{
-    grid-column: 1 / 3;
-    grid-row: 1;
-    font-family: 'Inter', sans-serif;
-    font-size: 2.5rem;
-    color: #806649;
-    text-shadow: #CCA374 .0625rem 0 .625rem;
-    margin-left: 1.875rem;
-    margin-top: 1.875rem;
-}
-
-.pInfoPages{
-    grid-column: 1 / 3;
-    grid-row: 2 / 3;
-    color: #806649;
-    margin-top: 1.25rem;
-    margin-right: 1.875rem;
-    margin-left: 1.875rem;
-}
-
-.img-1{
-    grid-column: 3;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto; }
+    .sectionPageAsesoramiento div h2 {
+      grid-column: 1/4;
+      grid-row: 1; }
+    .sectionPageAsesoramiento div p {
+      grid-column: 1/5;
+      grid-row: 3; }
+    .sectionPageAsesoramiento div .finalPages {
+      grid-column: 1/5;
+      grid-row: 5;
+      margin-bottom: 1.25rem; }
+  .img-1 {
+    grid-column: 1/3;
     grid-row: 2;
-}
+    margin-left: .4375rem; }
+  .img-2 {
+    grid-column: 3/5;
+    grid-row: 2; }
+  .img-3 {
+    grid-column: 2/4;
+    grid-row: 4;
+    margin-left: .4375rem; }
+  /*********PÁGINA ORDEN DE GUARDARROPAS********/
+  .sectionPageGuardarropas div {
+    flex-direction: column; }
+    .sectionPageGuardarropas div p {
+      margin-top: 1.25rem; }
+  .img-4 {
+    margin-right: 0rem;
+    margin-bottom: .625rem; }
+  .img-5 {
+    margin-left: 0rem;
+    margin-top: .625rem; } }
 
-.img-2{
-    grid-column: 4;
-    grid-row: 2;
-}
+@media (max-width: 425px) {
+  /***********LOGO MENÚ**********/
+  header nav div img {
+    width: 13%; }
+  /*******SECCIÓN PRINCIPAL******/
+  .sectionPrincipal {
+    height: 18rem; }
+    .sectionPrincipal div h2 {
+      font-size: 1.0625rem; }
+  /********SECCIÓN SOBRE MÍ******/
+  .sectionSegunda {
+    height: 46.875rem; }
+  /*******SECCIÓN SERVICIOS******/
+  .servicios img {
+    width: 14.375rem; }
+  /********SECCIÓN CONTACTO*******/
+  .sectionCuatro div h3 {
+    font-size: 2.5rem; }
+  .sectionCuatro div img {
+    width: 20rem; }
+  .formulario {
+    margin-left: .625rem; }
+    .formulario label {
+      font-size: 1.125rem; }
+    .formulario input, .formulario textarea {
+      font-size: 1rem;
+      width: 18.75rem; }
+      .formulario input:last-child, .formulario textarea:last-child {
+        font-size: 1.125rem; }
+  /***********BOTONES************/
+  .buttons a {
+    font-size: .75rem; }
+  /********PÁGINA SOBRE MÍ*******/
+  .sector-1 h2 {
+    font-size: 1.5625rem; }
+  .sector-3 img {
+    width: 15.625rem; }
+  .sector-4 img {
+    margin: .3125rem;
+    width: 10rem; }
+  .p-SobreMi {
+    font-size: .875rem; }
+  /*********PÁGINA ASESORAMIENTO INTEGRAL********/
+  .sectionPageAsesoramiento p {
+    font-size: .875rem; }
+  .sectionPageAsesoramiento div h2 {
+    font-size: 1.25rem; }
+  .sectionPageAsesoramiento div p {
+    font-size: .875rem; }
+  .sectionPageAsesoramiento div .imagenesPages {
+    width: 10rem; }
+  .sectionPageAsesoramiento div .finalPages {
+    font-size: .875rem; }
+  /*********PÁGINA ORDEN DE GUARDARROPAS********/
+  .sectionPageGuardarropas p {
+    font-size: .875rem; }
+  .sectionPageGuardarropas h2 {
+    font-size: 1.25rem; }
+  .sectionPageGuardarropas .pInfoPages {
+    font-size: .875rem; }
+  .sectionPageGuardarropas div img {
+    width: 10rem; }
+  .sectionPageGuardarropas div p {
+    font-size: .875rem; }
+  /*********PÁGINA PERSONAL SHOPPER********/
+  .sectionPageShopper p {
+    font-size: .875rem; }
+  .sectionPageShopper div h2 {
+    font-size: 1.25rem; }
+  .sectionPageShopper div .contenedorShopper img {
+    width: 12.5rem; }
+  .sectionPageShopper div .contenedorShopper p {
+    font-size: .875rem; }
+  .sectionPageShopper div .contenedorShopper .finalShopper {
+    font-size: .875rem; }
+  /*********PÁGINA ARMADO DE VALIJA********/
+  .sectionPageValija p {
+    font-size: .875rem; }
+  .sectionPageValija h2 {
+    font-size: 1.25rem; }
+  .sectionPageValija div p {
+    font-size: .875rem; }
+  .sectionPageValija div img {
+    width: 12.5rem; }
+  .sectionPageValija div .finalPages {
+    font-size: .875rem; } }
 
-.img-3{
-    grid-column: 4;
-    grid-row: 3;
-    margin-bottom: 1.875rem;
-}
-
-.imagenesPages{
-    width: 14.375rem;
-}
-
-.finalPages{
-    grid-column: 1 / 3;
-    grid-row: 3;
-    color: white;
-    margin-top: .625rem;
-    background-color: #80786f;
-    text-align: center;
-    margin-left: 1.25rem;
-}
-
-/******************************PÁGINA GUARDARROPAS***************************/
-
-.sectionPageGuardarropas{
-    margin-top: 1.875rem;
-    margin-bottom: 1.875rem;
-}
-
-.sectionPageGuardarropas p{
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.25rem;
-}
-
-.contenedorGuardarropas{
+@media (max-width: 373px) {
+  /********PÁGINA SOBRE MÍ********/
+  .sector-4 {
+    text-align: center; }
+  .sectionPageAsesoramiento div .imagenesPages {
+    width: 10rem; }
+  /*********PÁGINA ASESORAMIENTO INTEGRAL********/
+  .sectionPageAsesoramiento div {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
+    flex-direction: column; }
+  /************FOOTER************/
+  .containerFooter footer p {
+    font-size: .875rem; }
+  .containerFooter footer div {
+    margin-top: .625rem; }
+    .containerFooter footer div img {
+      width: 1.875rem; } }
 
-.img-4{
-    margin-right: .625rem;
-}
-
-.img-5{
-    margin-left: .625rem;
-}
-
-/******************************PÁGINA SHOPPER***************************/
-
-.sectionPageShopper{
-    margin-top: 1.875rem;
-    margin-bottom: 1.875rem;
-}
-
-.sectionPageShopper p{
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.25rem;
-}
-
-.contenedorShopper{
-    background-color: #FFF0DE;
-}
-
-.contenedorShopper2{
-    display: grid;
-    grid-template-columns: 2;
-    grid-auto-rows: auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: 1.875rem;
-    margin-right: 1.875rem;
-}
-
-.img-6{
-    grid-column: 1;
-    grid-row: 1/4;
-    margin-bottom: 1.25rem;
-}
-
-.pInfoShopper{
-    grid-column: 2;
-    grid-row: 1/3;
-    color: #806649;
-    margin-top: 1.25rem;
-    margin-right: 1.875rem;
-    margin-left: 1.875rem;
-}
-
-.finalShopper{
-    grid-column: 2;
-    grid-row: 3;
-    color: white;
-    margin-top: .625rem;
-    background-color: #80786f;
-    text-align: center;
-    margin-left: 1.25rem;
-}
-
-/******************************PÁGINA VALIJA***************************/
-
-.sectionPageValija{
-    margin-top: 1.875rem;
-    margin-bottom: 1.875rem;
-}
-
-.sectionPageValija p{
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.25rem;
-}
-
-.contenedorValija{
-    display: grid;
-    grid-template-columns: 2;
-    grid-auto-rows: auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: 1.875rem;
-    margin-right: 1.875rem;
-}
-
-
-.pInfoValija{
-    grid-column: 1;
-    grid-row: 1/3;
-    color: #806649;
-    margin-top: 1.25rem;
-    margin-right: 1.875rem;
-    margin-left: 1.875rem;
-}
-
-.finalValija{
-    grid-column: 1;
-    grid-row: 3;
-    color: white;
-    margin-top: .625rem;
-    background-color: #80786f;
-    text-align: center;
-    margin-right: 1.25rem;
-}
-
-.img-7{
-    grid-column: 2;
-    grid-row: 1/4;
-    margin-bottom: 1.25rem;
-}
-
-/*************************************FOOTER*********************************/
-
-.border-top{
-    margin: 1.875rem 1.25rem 0rem 1.25rem;
-}
-
-.containerFooter{
-    background-color: #FFF0DE;
-}
-
-.sectionFooter{
+@media (max-width: 320px) {
+  /***********LOGO MENÚ***********/
+  header nav div img {
+    width: 12%; }
+  /********SECCIÓN PRINCIPAL******/
+  .sectionPrincipal div h1 {
+    font-size: 2rem; }
+  .sectionPrincipal div h2 {
+    font-size: 1rem; }
+  /********SECCIÓN SOBRE MÍ*******/
+  .sectionSegunda {
+    height: 42.5rem;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin: .625rem 1.875rem .625rem 1.875rem;
-    text-align: center;
-}
-
-.logosRedes{
-    list-style: none;
-    list-style-type: none;
-}
-
-.logoRedes{
-    width: 3.125rem;
-}
-
-.textFooter{
-    font-family: 'Inter', sans-serif;
-    color: #80786f;
-    font-size: 1.25rem;
-    margin-top: 1.25rem;
-}
-
-/**********************media 1049**********************/
-@media (max-width: 1049px){
-    /*********PÁGINA SOBRE MÍ********/
-    .sector-3 img{
-        width: 21.25rem; 
-    }
-
-    .sector-4 img{
-        width: 15.625rem;
-    }
-}
-
-/***********************media 992**********************/
-@media (max-width: 992px){
-    /********SECCIÓN PRINCIPAL*******/
-    .fondoTitulos h1{
-        font-size: 4.0625rem;
-    }
-    /********PÁGINA SOBRE MÍ********/
-    .sector-1 h3{
-        font-size: 2.1875rem;
-    }
-    
-    .sector-3 img{
-        width: 23.75rem;
-    }
-
-    .sector-4 img{
-        width: 14.375rem;
-    }
-
-    .p-SobreMi{
-        font-size: 1.125rem;
-    }
-    
-    /**********FOOTER*************/
-    .sectionFooter{
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .textFooter{
-        text-align: center;
-        font-size: 1.125rem;
-    }
-
-    .logosRedes{
-        margin-top: .625rem;
-    }
-
-    .logoRedes{
-        width: 2.5rem;
-    }
-}
-
-/***********************media 928**********************/
-@media (max-width: 928px){
-    /***********LOGO MENÚ**********/
-    .barraNav img{
-        width: 7%;
-    }
-    /***********SECCIÓN PRINCIPAL*******/
-    .sectionPrincipal{
-        height: 21.875rem;
-    }
-
-    .fondoTitulos h1{
-        font-size: 3.75rem;
-    }
-
-    .fondoTitulos h2{
-        font-size: 1.25rem;
-    }
-    /***********SECCIÓN SERVICIOS*******/
-    .servicios img{
-        width: 15.625rem;
-    }
-
-    .servicios h3{
-        font-size: 1.25rem;
-    }
-    /***********SECCIÓN CONTACTO********/
-    .sectionCuatroTitulo{
-        font-size: 2.1875rem;
-        margin-left: .3125rem;
-    }
-
-    .imgContacto{
-        width: 21.875rem;
-    }
-
-    .formulario{
-        margin-right: .3125rem;
-    }
-
-    .formulario label{
-        font-size: 1.125rem;
-    }
-
-    .formulario input, textarea{
-        font-size: .9375rem;
-        width: 18.125rem;
-    }
-
-    .formulario input:last-child{
-        font-size: 1.125rem;
-    }
-
-    /***********PÁGINA SOBRE MÍ**********/
-    .sector-3 img{
-        width: 19.0625rem;
-    }
-    .sector-4 img{
-        width: 12.5rem;
-    }
-}
-
-/*************************media 768***********************/
-@media (max-width: 768px){
-    /***********LOGO MENÚ**********/
-    .barraNav img{
-        width: 9%;
-    }
-    /*********SECCIÓN PRINCIPAL********/
-    .sectionPrincipal{
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 18.75rem;
-    }
-
-    .fondoTitulos h1{
-        font-size: 3.125rem;
-        font-weight: 300;
-    }
-
-    .fondoTitulos h2{
-        font-size: 1.25rem;
-        font-weight: 300;
-    }
-    /********SECCIÓN SOBRE MÍ*******/
-    .sectionSegunda{
-        height: 43.75rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .sectionSegunda img{
-        width: 18.75rem;
-    }
-
-    .sectionSegundaText{
-        width: 100%;
-        padding: 0rem;
-        margin: 1.25rem;
-    }
-
-    .sectionSegundaText p{
-        font-size: 1.125rem;
-    }
-    /*********SECCIÓN SERVICIOS********/
-    .servicios img{
-        width: 12.5rem;
-    }
-
-    .servicios h3{
-        font-size: 1.125rem;
-    }
-    /*********SECCIÓN CONTACTO*********/
-    .sectionCuatroTitulo{
-        font-size: 1.5625rem;
-    }
-
-    .imgContacto{
-        width: 18.75rem;
-    }
-
-    .formulario label{
-        font-size: .9375rem;
-    }
-
-    .formulario input, textarea{
-        font-size: .8125rem;
-        width: 13.125rem;
-    }
-
-    .formulario input:last-child{
-        font-size: .9375rem;
-    }
-    /**************BOTONES*************/
-    .buttons a{
-        font-size: .875rem;
-    }
-    /**********PÁGINA SOBRE MÍ*********/
-    .sector-3{
-        grid-column: 3;
-        grid-row: 1 / 4;
-    }
-    .sector-4{
-        grid-column: 1 / 3;
-        grid-row: 3 / 4;
-        text-align: center;
-    }
-
-    .sector-4 img{
-        margin: .9375rem;
-    }
-    
-    .sector-5{
-        grid-column: 3;
-        grid-row: 3;
-        position: relative;
-        top: 18.75rem;
-    }
-
-    .sector-6{
-        grid-column: 1 / 4;
-        grid-row: 4;
-    }
-
-    .p-SobreMi{
-        font-size: 1rem;
-    }
-    /************FOOTER************/
-    .textFooter{
-        font-size: 1rem;
-    }
-
-    .logosRedes{
-        margin-top: .9375rem;
-    }
-
-    .logoRedes{
-        width: 2.1875rem;
-    }
-}
-
-/***************************media 622************************/
-@media (max-width: 622px){
-    /***********LOGO MENÚ**********/
-    .barraNav img{
-        width: 11%;
-    }
-    /********SECCIÓN PRINCIPAL******/
-    .fondoTitulos h1{
-        font-size: 2.1875rem;
-    }
-
-    .fondoTitulos h3{
-        font-size: 1.125rem;
-    }
-    /********SECCIÓN SOBRE MÍ*******/
-    .sectionSegunda{
-        height: 43.75rem;
-    }
-    .sectionSegunda img{
-        width: 17.5rem; 
-    }
-    .sectionSegundaText p{
-        font-size: 1rem;
-    }
-    /*******SECCIÓN SERVICIOS******/
-    .servicios img{
-        width: 15.625rem;
-    }
-    /********SECCIÓN CONTACTO*******/
-    .sectionCuatro{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .sectionCuatroTitulo{
-        writing-mode: horizontal-tb;
-        font-size: 3.125rem;
-        letter-spacing: .625rem;
-    }
-
-    .imgContacto{
-        width: 21.875rem;
-    }
-
-    .formulario label{
-        font-size: 1.25rem;
-    }
-
-    .formulario input, textarea{
-        font-size: 1.125rem;
-        width: 20.8125rem;
-    }
-
-    .formulario input:last-child{
-        font-size: 1.25rem;
-    }
-    /**********PÁGINA SOBRE MÍ*********/
-    .sector-1 h3{
-        font-size: 1.875rem;
-    }
-
-    .sector-4{
-        grid-column: 1 / 4;
-        margin-top: 1.25rem;
-    }
-
-    .sector-5{
-        grid-column: 1 / 4;
-        grid-row: 4;
-        top: 0rem;
-    }
-
-    .sector-6{
-        grid-row: 5;
-    }
-
-    .p-SobreMi{
-        font-size: 1rem;
-    }
-}
-
-/***********************media 585*************************/
-@media (max-width: 585px){
-    /*********PÁGINA SOBRE MÍ********/
-    .pagina-sobreMi{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    .sector-1 h3{
-        text-align: center;
-    }
-
-    .sector-2 p{
-        text-align: center;
-    }
-
-    .sector-3 img{
-        width: 15.625rem;
-    }
-    
-    .sector-4{
-        margin: 0rem;
-    }
-
-    .sector-4 img{
-        margin: .3125rem;
-        width: 11.25rem;
-    }
-}
-
-/************************media 425************************/
-@media (max-width: 425px){
-    /***********LOGO MENÚ**********/
-    .barraNav img{
-        width: 13%;
-    }
-    /*******SECCIÓN PRINCIPAL******/
-    .fondoTitulos h2{
-        font-size: 1.0625rem;
-    }
-    /********SECCIÓN SOBRE MÍ******/
-    .sectionSegunda{
-        height: 46.875rem;
-    }
-    /*******SECCIÓN SERVICIOS******/
-    .servicios img{
-        width: 14.375rem;
-    }
-    /********SECCIÓN CONTACTO*******/
-    .sectionCuatroTitulo{
-        font-size: 2.5rem;
-        letter-spacing: .625rem;
-    }
-
-    .imgContacto{
-        width: 20rem;
-    }
-
-    .formulario label{
-        font-size: 1.125rem;
-    }
-
-    .formulario{
-        margin-left: .625rem;
-    }
-
-    .formulario input, textarea{
-        font-size: 1rem;
-        width: 18.75rem;
-    }
-
-    .formulario input:last-child{
-        font-size: 1.125rem;
-    }
-    /***********BOTONES************/
-    .buttons a{
-        font-size: .75rem;
-    }
-    /********PÁGINA SOBRE MÍ*******/
-    .sector-1 h3{
-        font-size: 1.5625rem;
-    }
-
-    .sector-3 img{
-        width: 15.625rem;
-    }
-
-    .sector-4 img{
-        margin: .3125rem;
-        width: 10rem;
-    }
-
-    .p-SobreMi{
-        font-size: .875rem;
-    }
-}
-
-/***************************media 373************************/
-@media (max-width: 373px){
-    /********PÁGINA SOBRE MÍ********/
-    .sector-4{
-        text-align: center;
-    }
-    /************FOOTER************/
-    .textFooter{
-        font-size: .875rem;
-    }
-
-    .logosRedes{
-        margin-top: .625rem;
-    }
-
-    .logoRedes{
-        width: 1.875rem;
-    }
-}
-
-
-/***************************media 320************************/
-@media (max-width: 320px){
-    /***********LOGO MENÚ***********/
-    .barraNav img{
-        width: 12%;
-    }
-    /********SECCIÓN PRINCIPAL******/
-    .fondoTitulos h1{
-        font-size: 2rem;
-    }
-
-    .fondoTitulos h2{
-        font-size: 1rem;
-    }
-    /********SECCIÓN SOBRE MÍ*******/
-    .sectionSegunda{
-        height: 42.5rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .sectionSegunda img{
-        width: 14.0625rem;
-    }
-
-    .sectionSegundaText{
-        width: 100%;
-        padding: 0rem;
-        margin: 1.25rem;
-    }
-
-    .sectionSegundaText p{
-        font-size: .9375rem;
-    }
-    /********SECCIÓN SERVICIOS******/
-    .sectionServicios{
-        margin-top: 4.375rem;
-        margin-bottom: 3.125rem;
-    }
-
-    .servicios img{
-        width: 12.5rem;
-    }
-
-    .servicios h3{
-        font-size: 1rem;
-    }
-    /********SECCIÓN CONTACTO*******/
-    .sectionCuatroTitulo{
-        font-size: 1.875rem;
-        letter-spacing: .625rem;
-    }
-
-    .imgContacto{
-        width: 17.5rem;
-    }
-
-    .formulario{
-        margin-left: .625rem;
-        margin-right: 0rem;
-    }
-
-    .formulario label{
-        font-size: 1rem;
-    }
-
-    .formulario input, textarea{
-        font-size: .875rem;
-        width: 17.5rem;
-    }
-
-    .formulario input:last-child{
-        font-size: 1rem;
-    }
-}
+    flex-direction: column;
+    align-items: center; }
+    .sectionSegunda div img {
+      width: 14.0625rem; }
+    .sectionSegunda div {
+      width: 100%;
+      padding: 0rem;
+      margin: 1.25rem; }
+      .sectionSegunda div p {
+        font-size: .9375rem; }
+  /********SECCIÓN SERVICIOS******/
+  .sectionServicios {
+    margin-top: 4.375rem;
+    margin-bottom: 3.125rem; }
+  .servicios img {
+    width: 12.5rem; }
+  .servicios h3 {
+    font-size: 1rem; }
+  /********SECCIÓN CONTACTO*******/
+  .sectionCuatro div h3 {
+    font-size: 1.875rem; }
+  .sectionCuatro div img {
+    width: 17.5rem; }
+  .formulario {
+    margin-right: 0rem; }
+    .formulario label {
+      font-size: 1rem; }
+    .formulario input, .formulario textarea {
+      font-size: .875rem;
+      width: 17.5rem; }
+      .formulario input:last-child, .formulario textarea:last-child {
+        font-size: 1rem; } }

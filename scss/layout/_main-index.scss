@@ -1,0 +1,95 @@
+/*************SECCIÓN SOBRE MI**************/
+.sectionSegunda {
+    height: 32.8125rem;
+    margin: 1.25rem 1.25rem 3.125rem 1.25rem;
+    display: flex;
+    flex-direction: row;
+    div{
+        img{
+            width: 21.875rem;
+            box-shadow: 1.875rem 1.875rem #CCA374;
+        }
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: .9375rem;
+        padding: 1.25rem;
+        p{
+            margin: .625rem;
+            font-family: 'Oswald', sans-serif;
+            color: #806649;
+            font-size: 1.25rem;
+            font-weight: 400;
+            padding: 1.875rem;
+            text-align: center;
+        }
+    }
+}
+/****************SECCIÓN SERVICIOS*************/
+.sectionServicios{
+    background-image: url(../assets/imagenes/fondoSection.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.servicios{
+    img{
+        border-radius: 10%;
+        width: 18.75rem;
+    }
+    h3{
+        color:#FFF0DE;
+        text-shadow: #806649 .0625rem 0 .625rem;
+    }
+}
+/*****************SECCIÓN CONTACTO*************/
+.sectionCuatro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    div{
+        h3{
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            color: #80786f;
+            font-family: $fuente-titulos-secundarios;
+            font-size: 2.5rem;
+        }
+    }
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin: 1.875rem;
+    label{
+        font-family: 'Oswald', sans-serif;
+        color: #CCA374;
+        margin-top: 1.25rem;
+        font-size: 1.25rem;
+    }
+    input, textarea{
+        appearance: none;
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.125rem;
+        color: #80786f;
+        text-align: start;
+        border: .125rem solid #FFF0DE;
+        width: 20.8125rem;
+        &:last-child{
+            text-align: center;
+            color: #FFF0DE;
+            font-size: 1.25rem;
+            border-radius: .625rem;
+        }
+    }
+}
+

@@ -1,0 +1,51 @@
+@mixin margin{
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+}
+
+@mixin titulos{
+    font-family: $fuente-titulos-secundarios;
+    font-size: 2.5rem;
+    color: #806649;
+    text-shadow: #cca374 .0625rem 0 .625rem;
+    margin-top: 1.875rem;
+    margin-left: 1.875rem;
+}
+
+@mixin p-aviso{
+    font-family: $fuente-parrafos;
+    color: #80786f;
+    font-size: 1.25rem;
+    margin-left: 1.875rem;
+    margin-right: 1.875rem;
+    text-align: center;
+}
+
+@mixin texto{
+    color: #806649;
+    font-size: 1.25rem;
+    margin: 1.25rem 1.875rem 0rem 1.875rem;
+}
+
+@mixin p-final($column, $row){
+    font-family: $fuente-parrafos;
+    color: white;
+    font-size: 1.25rem;
+    background-color: #80786f;
+    text-align: center;
+    margin-top: .625rem;
+    margin-left: 1.25rem;
+    grid-column: $column;
+    grid-row: $row;
+}
+
+@mixin grid{
+    display: grid;
+    grid-template-columns: 2;
+    grid-auto-rows: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 1.875rem;
+    margin-right: 1.875rem;
+}

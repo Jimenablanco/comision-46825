@@ -1,0 +1,147 @@
+@media (max-width: 768px){
+    /***********LOGO MENÚ**********/
+    header{
+        nav{
+            div{
+                img{
+                    width: 9%;
+                }
+            }
+        }
+    }
+    /*********SECCIÓN PRINCIPAL********/
+    .sectionPrincipal{
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 18.75rem;
+        div{
+            h1{
+                font-size: 3.125rem;
+                font-weight: 300;
+            }
+            h2{
+                font-size: 1.25rem;
+                font-weight: 300;
+            }
+        }
+    }
+    /********SECCIÓN SOBRE MÍ*******/
+    .sectionSegunda{
+        height: 43.75rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div{
+            img{
+                width: 18.75rem;
+            }
+        }
+        div{
+            width: 100%;
+            padding: 0rem;
+            margin: 1.25rem;
+            p{
+                font-size: 1.125rem;
+            }
+        }
+    }
+    /*********SECCIÓN SERVICIOS********/
+    .servicios{ 
+        img{
+            width: 12.5rem;
+        }
+        h3{
+            font-size: 1.125rem;
+        }
+    }
+    /*********SECCIÓN CONTACTO*********/
+    .sectionCuatro{
+        div{
+            h3{
+                font-size: 1.5625rem;
+            }
+        }
+        div{
+            img{
+                width: 18.75rem;
+            }
+        }
+    }
+
+    .formulario{
+        label{
+            font-size: .93755rem;
+        }
+        input, textarea{
+            font-size: .8125rem;
+            width: 13.125rem;
+            &:last-child{
+                font-size: .9375rem;
+            }
+        }
+    }
+    /**************BOTONES*************/
+    .buttons{ 
+        a{
+            font-size: .875rem;
+        }
+    }
+    /**********PÁGINA SOBRE MÍ*********/
+    .sector-3{
+        grid-column: 3;
+        grid-row: 1 / 4;
+    }
+    .sector-4{
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+        text-align: center;
+        img{
+            margin: .9375rem;
+        }
+    }
+    
+    .sector-5{
+        grid-column: 3;
+        grid-row: 3;
+        position: relative;
+        top: 18.75rem;
+    }
+
+    .sector-6{
+        grid-column: 1 / 4;
+        grid-row: 4;
+    }
+
+    .p-SobreMi{
+        font-size: 1rem;
+    }
+    /*********PÁGINA PERSONAL SHOPPER********/
+    .contenedorShopper{
+        display: flex;
+        flex-direction: column;
+    }
+    /*********PÁGINA ARMADO DE VALIJA********/
+    .sectionPageValija{
+        div{
+            display: flex;
+            flex-direction: column;
+            p{
+                margin-bottom: 1.25rem;
+            }
+        }
+    }
+    /************FOOTER************/
+    .containerFooter{
+        footer{
+            p{
+                font-size: 1rem;
+            }
+            div{
+                margin-top: .9375rem;
+                img{
+                    width: 2.1875rem;
+                }
+            }
+        }
+    }
+}

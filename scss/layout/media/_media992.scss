@@ -1,0 +1,109 @@
+@media (max-width: 992px){
+    /********SECCIÓN PRINCIPAL*******/
+    .sectionPrincipal{
+        div{ 
+            h1{
+                font-size: 4.0625rem;
+            }
+        }
+    }
+    /********PÁGINA SOBRE MÍ********/
+    .sector-1 h2{
+        font-size: 2.1875rem;
+    }
+    
+    .sector-3 img{
+        width: 23.75rem;
+    }
+
+    .sector-4 img{
+        width: 14.375rem;
+    }
+
+    .p-SobreMi{
+        font-size: 1.125rem;
+    }
+    /*********PÁGINA ASESORAMIENTO INTEGRAL********/
+    .sectionPageAsesoramiento{
+        p{
+            font-size: 1.125rem;
+        }
+        div{
+            h2{
+                font-size: 2.1875rem;
+            }
+            p{
+                font-size: 1.125rem;
+            }
+            .imagenesPages{
+                width: 12.5rem;
+            }
+        }
+    }
+    /*********PÁGINA ORDEN DE GUARDARROPAS********/
+    .sectionPageGuardarropas{
+        p{
+            font-size: 1.125rem;
+        }
+        h2{
+            font-size: 2.1875rem;
+        }
+        .pInfoPages{
+            font-size: 1.125rem;
+        }
+        div{
+            p{
+                font-size: 1.125rem;
+            }
+        }
+    }
+    /*********PÁGINA PERSONAL SHOPPER********/
+    .sectionPageShopper{
+        p{
+            font-size: 1.125rem;
+        }
+        div{
+            h2{
+                font-size: 2.1875rem;
+            }
+            .contenedorShopper{
+                p{
+                    font-size: 1.125rem;
+                }
+            }
+        }
+    }
+    /*********PÁGINA ARMADO DE VALIJA********/
+    .sectionPageValija{
+        p{
+            font-size: 1.125rem;
+        }
+        h2{
+            font-size: 2.1875rem;
+        }
+        div{
+            p{
+                font-size: 1.125rem;
+            }
+        }
+    }
+    /**********FOOTER*************/
+    .containerFooter{
+        footer{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+            p{
+                text-align: center;
+                font-size: 1.125rem;
+            }
+            div{
+                margin-top: .625rem;
+                img{
+                    width: 2.5rem;
+                }
+            }
+        }
+    }
+}

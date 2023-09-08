@@ -1,0 +1,34 @@
+@media (max-width: 373px){
+    /********PÁGINA SOBRE MÍ********/
+    .sector-4{
+        text-align: center;
+    }
+    .sectionPageAsesoramiento{
+        div{
+            .imagenesPages{
+                width: 10rem;
+            }
+        }
+    }
+    /*********PÁGINA ASESORAMIENTO INTEGRAL********/
+    .sectionPageAsesoramiento{
+        div{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    /************FOOTER************/
+    .containerFooter{
+        footer{
+            p{
+                font-size: .875rem;
+            }
+            div{
+                margin-top: .625rem;
+                img{
+                    width: 1.875rem;
+                }
+            }
+        }
+    }
+}

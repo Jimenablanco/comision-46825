@@ -1,0 +1,29 @@
+.sectionPageShopper{
+    @include margin;
+    p{
+        @include p-aviso;
+    }
+    div{
+        background-color: $background-principal;
+        h2{
+            @include titulos;
+        }
+    }
+}
+
+.contenedorShopper{
+    @include grid;
+    img{
+        grid-column: 1;
+        grid-row: 1/4;
+        margin-bottom: 1.25rem;
+    }
+    p{
+        @include texto;
+        grid-column: 2;
+        grid-row: 1/3;
+    }
+    .finalShopper{
+        @include p-final(2, 3);
+    }
+}
