@@ -388,7 +388,10 @@ header nav div div {
       margin-bottom: 1.25rem; }
 
 .containerFooter {
-  background-color: #FFF0DE; }
+  background: linear-gradient(-45deg, #ffffff, #fff0de, #cca374);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite; }
   .containerFooter footer {
     display: flex;
     flex-direction: row;
@@ -407,6 +410,22 @@ header nav div div {
       list-style-type: none; }
       .containerFooter footer div img {
         width: 3.125rem; }
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
 
 .buttons {
   background-color: #806649;
