@@ -5,47 +5,22 @@
   padding: 0;
   box-sizing: border-box; }
 
-header nav div img {
-  width: 5%; }
-
-header nav div button {
-  color: #CCA374;
-  border: none; }
-
-header nav div div {
-  justify-content: flex-end; }
+header {
+  position: fixed;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.681); }
+  header nav div img {
+    width: 5%; }
+  header nav div button {
+    color: #CCA374;
+    border: none; }
+  header nav div div {
+    justify-content: flex-end; }
 
 .tipografiaMenu {
   font-family: 'Oswald', sans-serif;
   color: #CCA374; }
-
-.scale-up-bl {
-  -webkit-animation: scale-up-bl 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: scale-up-bl 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
-
-@-webkit-keyframes scale-up-bl {
-  0% {
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
-    -webkit-transform-origin: 0% 100%;
-    transform-origin: 0% 100%; }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transform-origin: 0% 100%;
-    transform-origin: 0% 100%; } }
-
-@keyframes scale-up-bl {
-  0% {
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
-    -webkit-transform-origin: 0% 100%;
-    transform-origin: 0% 100%; }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transform-origin: 0% 100%;
-    transform-origin: 0% 100%; } }
 
 .sectionPrincipal {
   background-image: url("../assets/imagenes/imgPortada.png");
@@ -67,7 +42,18 @@ header nav div div {
       text-align: center;
       font-size: 6.25rem;
       font-weight: 400;
-      text-shadow: 0rem 0.125rem 0.25rem rgba(0, 0, 0, 0.35); }
+      text-shadow: 0rem 0.125rem 0.25rem rgba(0, 0, 0, 0.35);
+      animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms; }
+
+@keyframes reveal {
+  80% {
+    letter-spacing: 8px; }
+  100% {
+    background-size: 300% 300%; } }
+
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #fff; } }
     .sectionPrincipal div h2 {
       font-family: "Inter", sans-serif;
       color: #CCA374;
@@ -110,7 +96,8 @@ header nav div div {
 
 .servicios img {
   border-radius: 10%;
-  width: 18.75rem; }
+  width: 18.75rem;
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028), 12.5px 12.5px 10px rgba(0, 0, 0, 0.035), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042), 41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05), 100px 100px 80px rgba(0, 0, 0, 0.07); }
 
 .servicios h3 {
   color: #FFF0DE;
@@ -697,7 +684,7 @@ header nav div div {
   .sectionPrincipal div h1 {
     font-size: 2.1875rem; }
   .sectionPrincipal div h2 {
-    font-size: 1.125rem; }
+    font-size: 1rem; }
   /********SECCIÓN SOBRE MÍ*******/
   .sectionSegunda {
     height: 43.75rem; }
@@ -847,7 +834,7 @@ header nav div div {
   .sectionPrincipal {
     height: 18rem; }
     .sectionPrincipal div h2 {
-      font-size: 1.0625rem; }
+      font-size: .9375rem; }
   /********SECCIÓN SOBRE MÍ******/
   .sectionSegunda {
     height: 46.875rem; }
@@ -952,7 +939,7 @@ header nav div div {
   .sectionPrincipal div h1 {
     font-size: 2rem; }
   .sectionPrincipal div h2 {
-    font-size: 1rem; }
+    font-size: .8125rem; }
   /********SECCIÓN SOBRE MÍ*******/
   .sectionSegunda {
     height: 42.5rem;
